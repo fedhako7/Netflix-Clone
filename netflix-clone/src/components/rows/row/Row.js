@@ -6,7 +6,7 @@ import axios from '../../../utils/Axios'
 
 
 const Row = ({title, fetchUrl, isLargeRow}) => {
-
+    
     const [movie, setMovie] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState('');
     const baseUrl = "https://image.tmdb.org/t/p/original";
@@ -32,6 +32,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                     const urlParams = new URLSearchParams(new URL(url).search);
                     setTrailerUrl(urlParams.get('v'));
                 })
+                .catch((error) => console.log('Trailer not found', error));
         }
     }
 
