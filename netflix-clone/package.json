@@ -8,17 +8,17 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.2",
     "@mui/material": "^6.1.2",
-    "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
     "axios": "^1.7.7",
-    "html-webpack-plugin": "^5.6.0",
+    "meow": "^13.2.0",
     "movie-trailer": "^3.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
     "react-youtube": "^10.1.0",
+    "trim-newlines": "^3.0.1",
     "web-vitals": "^4.2.3"
   },
   "scripts": {
@@ -50,6 +50,7 @@
   },
   "resolutions": {
     "rollup": "2.79.2",
+    "trim-newlines": "^3.0.1",
     "nth-check": "2.1.1"
   },
   "devDependencies": {
